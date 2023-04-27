@@ -1,0 +1,70 @@
+
+
+#signuptitle {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(237,36,34), rgb(222, 105, 103), rgb(222, 105, 103), rgb(237,36,34));
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: max-content;
+}
+
+.poke_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;;
+}
+
+.pokecard {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-width: 5.5px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom right, rgb(64, 64, 64), rgb(64, 64, 64), rgb(118, 117, 117), rgb(64, 64, 64), rgb(64, 64, 64)) 3;
+
+    background-image: linear-gradient(to bottom right,rgb(252,187,31), rgb(254,220,87), rgb(251, 233, 120), rgb(255, 243, 195),  rgb(254,220,87), rgb(252,187,31));
+    border-radius: 8px;
+    box-shadow: 10px 15px 35px 2px;
+}
+
+
+
+.card-img-top {
+    border-width: 4.3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom right, #555, #555, #999898, #555, #555) 3;
+    display: flex;
+    justify-content: center;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: -2%;
+    background-image: linear-gradient(to bottom right, rgb(216, 216, 216), rgb(216, 216, 216), rgb(255, 255, 255), rgb(216, 216, 216), rgb(216, 216, 216));
+}
+
+.card_top {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-family: 'Rajdhani', sans-serif;
+    font-size:;
+}
+
+.cardstats > p {
+    margin-bottom: 0%;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.list-group > li {
+    background: rgba(0,0,0,0);
+    font-family: 'Rajdhani', sans-serif;
+}
