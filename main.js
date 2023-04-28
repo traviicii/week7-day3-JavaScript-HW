@@ -38,6 +38,7 @@ const render = (data) => {
     container.innerHTML = '';
     let newHtml
     if (data){
+        try{
 
         newHtml = document.createElement('div')
         newHtml.innerHTML = `
@@ -90,17 +91,25 @@ const render = (data) => {
               Abilities</li>
             <li class="list-group-item" style=" font-weight: 600; padding-top: 5px; padding-bottom: 5px;">
               ${data.abilities[0].ability.name}</li>
+            <li class="list-group-item" style=" font-weight: 600; padding-top: 5px; padding-bottom: 5px;">
+            ${data.abilities[1].ability.name ? data.abilities[1].ability.name : ''}</li>
           </ul>
         </div>
         </div>
         `
     }
-    else{
+    catch{
         newHtml = document.createElement('h2')
         newHtml.innerText = "something isn't right..."
         // this error catch isn't workinggg :(
         }
         container.append(newHtml);
+}else{
+    newHtml = document.createElement('h2')
+    newHtml.innerText = "something isn't right..."
+    // this error catch isn't workinggg :(
+    }
+    container.append(newHtml);
 };
 
 const form = document.getElementById('pokedexSearch');
